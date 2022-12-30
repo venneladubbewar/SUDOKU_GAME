@@ -14,7 +14,7 @@ import javax.swing.*;
  *
  * @author DubbewarKiran
  */
-public class SUDUKU_FRAME extends javax.swing.JFrame {
+public class SUDOKU_FRAME extends javax.swing.JFrame {
    
     private String number;
     private boolean globalvar = false;
@@ -33,7 +33,7 @@ public class SUDUKU_FRAME extends javax.swing.JFrame {
         {"6","8","9","7","2","1","4","5","3"}
     };
  
-    public SUDUKU_FRAME() {
+    public SUDOKU_FRAME() {
         initComponents();
   //000//      number = "1";
     }
@@ -341,7 +341,7 @@ private void seeSolution()
         });
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("SUDUKU GAME");
+        setTitle("SUDOKU GAME");
         setResizable(false);
 
         jPanel2.setBackground(new java.awt.Color(0, 0, 0));
@@ -2535,20 +2535,21 @@ private void seeSolution()
                 }
             }
         } catch (ClassNotFoundException ex) {
-            java.util.logging.Logger.getLogger(SUDUKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SUDOKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
-            java.util.logging.Logger.getLogger(SUDUKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SUDOKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (IllegalAccessException ex) {
-            java.util.logging.Logger.getLogger(SUDUKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SUDOKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
-            java.util.logging.Logger.getLogger(SUDUKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            java.util.logging.Logger.getLogger(SUDOKU_FRAME.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
+        //</editor-fold>
         //</editor-fold>
 
         /* Create and display the form */
         java.awt.EventQueue.invokeLater(new Runnable() {
             public void run() {
-                new SUDUKU_FRAME().setVisible(true);
+                new SUDOKU_FRAME().setVisible(true);
             }
         });
     }
